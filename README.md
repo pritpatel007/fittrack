@@ -4,6 +4,34 @@ A production-grade full-stack gym management web application built with the MERN
 
 ---
 
+## Screenshots
+
+### Homepage
+![FitTrack Homepage](<photo/Homepage.png>)
+
+### Login Page
+![FitTrack Login Page](<photo/LoginPage.png>)
+
+### Admin Dashboard
+![FitTrack Admin Dashboard](<photo/Admindasboard.png>)
+
+### Trainer Dashboard
+![FitTrack Trainer Dashboard](<photo/Trainerdashboard.png>)
+
+### Member Dashboard
+![FitTrack Member Dashboard](<photo/MemberDashboard.png>)
+
+### Classes
+![FitTrack Classes](<photo/Classes.png>)
+
+### Membership Plans
+![FitTrack Membership Plans](<photo/Membership Plans.png>)
+
+### Progress Tracker
+![FitTrack Progress Tracker](<photo/ProgressTracker.png>)
+
+---
+
 ## Tech Stack
 
 **Frontend:** React 18 + Vite · React Router v6 · Tailwind CSS · Axios · React Hook Form · Recharts · Lucide React
@@ -244,6 +272,3 @@ npm run preview  # Preview production build
 MIT — free to use as a portfolio project or starting point for a real gym platform.
 
 
-
-pritpatel0409_db_user
-RAH8N0PMgNIiFQ1B
