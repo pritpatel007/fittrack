@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const dns = require('node:dns');
 const bcrypt = require('bcryptjs');
 
 dotenv.config();
+if (process.env.MONGO_DNS_SERVERS) {
+  dns.setServers(process.env.MONGO_DNS_SERVERS.split(',').map((server) => server.trim()).filter(Boolean));
+}
 
 const User = require('../models/User');
 const TrainerProfile = require('../models/TrainerProfile');

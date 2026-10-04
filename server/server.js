@@ -2,11 +2,15 @@ const express = require('express');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const dotenv = require('dotenv');
+const dns = require('node:dns');
 const path = require('path');
 const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
 
 dotenv.config();
+if (process.env.MONGO_DNS_SERVERS) {
+  dns.setServers(process.env.MONGO_DNS_SERVERS.split(',').map((server) => server.trim()).filter(Boolean));
+}
 connectDB();
 
 const app = express();
